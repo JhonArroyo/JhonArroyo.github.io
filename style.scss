@@ -19,6 +19,24 @@ body {
         top: 0;
         z-index: 100;
     }
+
+        .circle {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        border: solid;
+        border-color: #817c7c;
+        background-color: #6836c3;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        overflow: hidden;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
 }
 
 
@@ -36,9 +54,23 @@ section .container-alert {
 
 section .container-article {
     display: grid;
-    margin: auto;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    width: auto;
     padding: 20px;
+    justify-items: center;
+    justify-content: center;
     background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
+
+
+    .card {
+        margin-bottom: 4rem;
+        img {
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
 }
 
 div#ContactUs {
@@ -51,4 +83,12 @@ form {
     margin: auto;
     padding: 20px;
 
+}
+@media screen and (max-width: 768px) {
+    section .container-article {
+        grid-template-columns: auto;
+        .card {
+            margin-bottom: 4rem;
+        }
+    }
 }
