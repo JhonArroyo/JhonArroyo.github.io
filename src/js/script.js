@@ -17,7 +17,7 @@ const draw = (data) => {
     const fetchapi = document.getElementById('fetchapi');
     data.forEach(element => {
         const divNews = document.createElement('div');
-        divNews.classList.add('card', 'w-75');
+        divNews.classList.add('card', 'w-75', 'border-0');
         divNews.innerHTML = `
             <img src="${element.urlToImage}" onclick="imageClick('${element.url}')" class="card-img-top" alt="...">
             <div class="card-body">
