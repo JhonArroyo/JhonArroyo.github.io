@@ -20,7 +20,7 @@ body {
         z-index: 100;
     }
 
-        .circle {
+    .circle {
         width: 45px;
         height: 45px;
         border-radius: 100%;
@@ -31,12 +31,12 @@ body {
         text-align: center;
         font-size: 14px;
         overflow: hidden;
-        }
+    }
 
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 
@@ -66,27 +66,53 @@ section .container-article {
 
     .card {
         margin-bottom: 4rem;
+
         img {
+            width: 100%;
+            height: 200px;
             object-fit: cover;
             cursor: pointer;
         }
     }
 }
 
-div#ContactUs {
-    background: url('https://res.cloudinary.com/dxg9gszax/image/upload/v1649861696/training_resource_wb8i8g.jpg') no-repeat center center/ cover;
+section {
+    .container {
+        &.bg-light {
+            padding: 20px;
+        }
+    }
 }
 
-form {
-    background-color: #ffffff;
-    width: 76%;
-    margin: auto;
+.footer {
+    &.bckg-img {
+        height: 576px;
+        width: 1450px auto;
+        background: url('https://res.cloudinary.com/dxg9gszax/image/upload/v1649861696/training_resource_wb8i8g.jpg') no-repeat center center/ cover;
+    }
+}
+
+.container {
+   &.bg-light {
+        background-color: #f2f4f8!important;
+        padding: 20px;
+    }
+}
+
+.footer {
     padding: 20px;
-
+    &.form {
+        background-color: #ffffff;
+        width: 76%;
+        margin: auto;
+        padding: 20px;
+    }
 }
+
 @media screen and (max-width: 768px) {
     section .container-article {
         grid-template-columns: auto;
+
         .card {
             margin-bottom: 4rem;
         }

@@ -28,7 +28,8 @@ const draw = (data) => {
         fetchapi.appendChild(divNews);
     });
 }
-/*
+
+
 const submitted = () => {
     const Fname = document.getElementById('inputFname').value;
     const Lname = document.getElementById('inputLname').value;
@@ -36,7 +37,7 @@ const submitted = () => {
     const Pnumber = document.getElementById('inputPnumber').value;
     const Comment = document.getElementById('inputComments').value;
 
-    !Fname || !Lname || !Email || !Pnumber || !Comment ? alert('Please fill in all the fields'): alert
+    !Fname || !Lname || !Email || !Pnumber || !Comment ? alert('Please fill-in all the fields'): alert
     (
         `
         Name: ${Fname} ${Lname}
@@ -47,4 +48,3 @@ const submitted = () => {
     );
     return false;
 }
-*/
