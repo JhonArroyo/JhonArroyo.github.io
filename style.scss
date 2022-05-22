@@ -37,13 +37,11 @@ body {
         color: #fff;
         text-decoration: none;
     }
+
 }
-
-
 
 section .container-alert {
     padding: 20px;
-
     .alert {
         height: 45px auto;
         width: 940px auto;
@@ -102,10 +100,11 @@ section {
 .footer {
     padding: 20px;
     &.form {
-        background-color: #ffffff;
         width: 76%;
         margin: auto;
         padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
     }
 }
 

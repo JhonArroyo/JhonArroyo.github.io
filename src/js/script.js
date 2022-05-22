@@ -19,10 +19,10 @@ const draw = (data) => {
         const divNews = document.createElement('div');
         divNews.classList.add('card', 'w-75', 'border-0');
         divNews.innerHTML = `
-            <img src="${element.urlToImage}" onclick="imageClick('${element.url}')" class="card-img-top" alt="...">
+            <img src="${element.urlToImage}" onclick="imageClick('${element.url}')" class="card-img-top" alt="${element.title}">
             <div class="card-body">
                 <h5 class="card-title">${element.title}</h5>
-                <p class="card-text">Sample text.</p>
+                <p class="card-text">${element.content}</p>
             </div>
         `;
         fetchapi.appendChild(divNews);
