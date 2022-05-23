@@ -25,7 +25,6 @@ const draw = (data) => {
     });
 }
 
-
 const submitted = () => {
     const Fname = document.getElementById('inputFname').value;
     const Lname = document.getElementById('inputLname').value;
@@ -44,7 +43,7 @@ const submitted = () => {
     );
     return false;
 }
- 
+
 
 //jquery section
 

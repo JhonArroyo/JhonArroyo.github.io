@@ -73,8 +73,8 @@ section .container-article {
             cursor: pointer;
         }
     }
+    
 }
-
 section {
     .container {
         &.bg-light {
@@ -88,6 +88,23 @@ section {
         height: 576px;
         width: 1450px auto;
         background: url('https://res.cloudinary.com/dxg9gszax/image/upload/v1649861696/training_resource_wb8i8g.jpg') no-repeat center center/ cover;
+    }
+
+    .container {
+        margin-top: 150px;
+        margin-left: 250px !important;
+    }
+    .container h2 {
+        font-weight: 400;
+        color: #ffffff;
+    }
+    .container p {
+        font-weight: lighter;
+        color: #ffffff;
+    }
+    .container .btn-primary {
+        background-color: transparent;
+        border-color: #ffffff;
     }
 }
 
