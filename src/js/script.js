@@ -9,10 +9,6 @@ window.onload = function () {
         .catch(error => console.error(error))
 }
 
-const imageClick = (url) => {
-    window.location = url;
-}
-
 const draw = (data) => {
     const fetchapi = document.getElementById('fetchapi');
     data.forEach(element => {
@@ -48,3 +44,25 @@ const submitted = () => {
     );
     return false;
 }
+ 
+
+//jquery section
+
+(function($) {
+    var $window = $(window),
+        $navitemaster = $('#navitem-master'),
+        $circlestate  = $('#circlestate');
+
+    function resize() {
+        if ($window.width() >= 990) {
+            return $navitemaster.addClass('ml-auto'), $circlestate.addClass('ms-auto');
+        }
+
+        $navitemaster.removeClass('ml-auto');
+        $circlestate.removeClass('ms-auto');
+    }
+    
+    $window
+        .resize(resize)
+        .trigger('resize');
+})(jQuery);
