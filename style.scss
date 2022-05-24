@@ -88,23 +88,25 @@ section {
         height: 576px;
         width: 1450px auto;
         background: url('https://res.cloudinary.com/dxg9gszax/image/upload/v1649861696/training_resource_wb8i8g.jpg') no-repeat center center/ cover;
+
+        .row {
+            margin-top: 150px;
+            margin-left: 200px;
+        }
+        h2 {
+            font-weight: 400;
+            color: #ffffff;
+        }
+        p {
+            font-weight: lighter;
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: transparent;
+            border-color: #ffffff;
+        }
     }
-    .row {
-        margin-top: 150px;
-        margin-left: 200px;
-    }
-    h2 {
-        font-weight: 400;
-        color: #ffffff;
-    }
-    p {
-        font-weight: lighter;
-        color: #ffffff;
-    }
-    .btn-primary {
-        background-color: transparent;
-        border-color: #ffffff;
-    }
+
 }
 
 .container {
@@ -145,40 +147,48 @@ section {
 }
 @media screen and (max-width: 768px) {
     .footer {
-        .row {
-            margin-top: 150px;
-            margin-left: 100px;
-        }
+        &.bckg-img {
+            .row {
+                margin-top: 150px;
+                margin-left: 100px;
+            }
+        }   
     }
 }
 @media screen and (max-width: 425px) {
     .footer {
-        .row {
-            margin-top: 150px;
-            margin-left: 0px;
+        &.bckg-img {
+            .row {
+                margin-top: 150px;
+                margin-left: 0px;
+            }
         }
     }
 }
 @media screen and (max-width: 375px) {
     .footer {
-        .row {
-            margin-top: 100px;
-            margin-left: 0px;
-        }
-        p {
-            font-size: 14px;
+        &.bckg-img {
+            .row {
+                margin-top: 100px;
+                margin-left: 0px;
+            }
+            p {
+                font-size: 14px;
+            }
         }
     }
 }
 
 @media screen and (max-width: 320px) {
     .footer {
-        .row {
-            margin-top: 100px;
-            margin-left: 0px;
-        }
-        p {
-            font-size: 12px;
+        &.bckg-img {
+            .row {
+                margin-top: 100px;
+                margin-left: 0px;
+            }
+            p {
+                font-size: 12px;
+            }
         }
     }
 }
