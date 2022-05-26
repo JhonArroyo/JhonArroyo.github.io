@@ -23,8 +23,23 @@ const draw = (data) => {
         `;
         fetchapi.appendChild(divNews);
     });
+    const boxes = [...document.querySelectorAll(".card")];
+    for (let i = 0; i < 4; i++) {
+        const box = boxes[i];
+        box.style.display = "block";
+    }
 }
-
+$(function () {
+    //$(".grd-box").slice(0, 2).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".card:hidden").slice(0, 4).slideDown();
+        if ($(".card:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+            $('#loadmore').replaceWith("<p class='p'>No More</p>");
+        }
+    });
+});
 const submitted = () => {
     const Fname = document.getElementById('inputFname').value;
     const Lname = document.getElementById('inputLname').value;
