@@ -29,14 +29,16 @@ const draw = (data) => {
         box.style.display = "block";
     }
 }
+//jquery section 1
 $(function () {
     //$(".grd-box").slice(0, 2).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $(".card:hidden").slice(0, 4).slideDown();
         if ($(".card:hidden").length == 0) {
-            $("#load").fadeOut('slow');
-            $('#loadmore').replaceWith("<p class='p'>No More</p>");
+            //$("#load").fadeOut('slow');
+            $("#loadMore").text("No more articles");
+            $('#loadMore').prop('disabled', true);
         }
     });
 });
@@ -60,7 +62,7 @@ const submitted = () => {
 }
 
 
-//jquery section
+//jquery section 2
 
 (function($) {
     var $window = $(window),
