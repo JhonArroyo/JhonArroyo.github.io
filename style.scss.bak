@@ -1,8 +1,3 @@
-$bg-color: #f2f4f8;
-$color-light: #ffffff;
-$bshadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
-$p-20: 20px;
-
 * {
     font: Open Sans Regular;
 }
@@ -11,13 +6,13 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: $bg-color;
+    background-color: #f2f4f8;
 }
 
 .navbar {
     height: 66px auto;
     width: 1440px auto;
-    box-shadow: $bshadow;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
 
     &.keep-navbar {
         position: sticky;
@@ -33,7 +28,7 @@ body {
     border: solid;
     border-color: #817c7c;
     background-color: #6836c3;
-    color: $color-light;
+    color: #fff;
     text-align: center;
     font-size: 14px;
     overflow: hidden;
@@ -41,13 +36,13 @@ body {
     &.one-line > a {
       line-height: 40px;
   
-      color: $color-light;
+      color: #fff;
       text-decoration: none;
     }
   }
 
 section .container-alert {
-    padding: $p-20;
+    padding: 20px;
     .alert {
         height: 45px auto;
         width: 940px auto;
@@ -61,11 +56,11 @@ section .container-article {
     grid-template-columns: auto auto;
     margin: 0 auto;
     width: auto;
-    padding: $p-20;
+    padding: 20px;
     justify-items: center;
     justify-content: center;
-    background-color: $color-light;
-    box-shadow: $bshadow;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
 
 
     .card {
@@ -84,7 +79,7 @@ section .container-article {
 section {
     .container {
         &.bg-light {
-            padding: $p-20;
+            padding: 20px;
         }
     }
 }
@@ -101,15 +96,15 @@ section {
         }
         h2 {
             font-weight: 400;
-            color: $color-light;
+            color: #ffffff;
         }
         p {
             font-weight: lighter;
-            color: $color-light;
+            color: #ffffff;
         }
         .btn-primary {
             background-color: transparent;
-            border-color: $color-light;
+            border-color: #ffffff;
         }
     }
 
@@ -117,19 +112,19 @@ section {
 
 .container {
    &.bg-light {
-        background-color: $bg-color!important;
-        padding: $p-20;
+        background-color: #f2f4f8!important;
+        padding: 20px;
     }
 }
 
 .footer {
-    padding: $p-20;
+    padding: 20px;
     &.form {
         width: 76%;
         margin: auto;
-        padding: $p-20;
-        background-color: $color-light;
-        box-shadow: $bshadow;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
     }
 }
 
